@@ -16,3 +16,11 @@ Det innebär att alla värden för alla beställningar måste kontrolleras.
 
 Detta innebär förmodligen att någon skulle kunna logga in på kontot och föra över alla pengarna på kontot till ett annat konto.
 
+4. Lösningen fungerar ej. Det nya API:et fungerar annorlunda. Den fråga som skickas kommer returnera ett Token som representerar den framtida transaktionen och inte visa en sida hos paypal för betalning.
+
+För att lösa detta bör vi göra detta anrop mot paypal i backend (med t.ex. WebClient som i Lektion 18, eller med WebRequest).
+
+Svaret på anropet är ett token som vi sedan kan skicka vidare till PostToPaypal-vyn. Detta token bör vara den enda parametern som finns i hidden-fält i formuläret i vyn - alla andra parametrar bör tas bort. Vyn bör ej vara typad för paypalmodell, utan för detta token.
+
+Iövrigt kommer implementationen fungera efter dessa ändringar.
+
