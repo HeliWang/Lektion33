@@ -1,0 +1,10 @@
+﻿1. Han vill visa 2 st. input-fält och bygger ett helt HTML-table.
+
+Spontant tyder det på att han antingen inte kan MVC bra, att han inte kan HTML5/CSS3 särskillt bra eller att han är slarvig.
+
+Man får dock vara medveten om att man i tutorials ofta gör lösningarna så enkla som möjligt. I det här fallet så är dock lösningen mer omfattande än om han implementerat det "rätt".
+
+Inget av ovanstående är särskillt betryggande för mig när det kommer till tutorials som rör kritisk funktionalitet.
+
+Dock kan det tänkas att författaren haft en god anledning att göra lösningen som den ser ut, även om vi inte direkt kan se den.
+
