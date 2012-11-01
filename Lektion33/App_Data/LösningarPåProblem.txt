@@ -8,3 +8,6 @@ Inget av ovanstående är särskillt betryggande för mig när det kommer till t
 
 Dock kan det tänkas att författaren haft en god anledning att göra lösningen som den ser ut, även om vi inte direkt kan se den.
 
+2. Redirect-sidan (PostToPaypal.cshtml) är tillgänglig client side. All data här kan manipuleras - dvs. en användare skulle kunna sätta priset på alla produkter till 0.00 och sedan submitta en likadan form.
+
+Det innebär att alla värden för alla beställningar måste kontrolleras.
