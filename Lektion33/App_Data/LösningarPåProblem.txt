@@ -11,3 +11,8 @@ Dock kan det tänkas att författaren haft en god anledning att göra lösningen
 2. Redirect-sidan (PostToPaypal.cshtml) är tillgänglig client side. All data här kan manipuleras - dvs. en användare skulle kunna sätta priset på alla produkter till 0.00 och sedan submitta en likadan form.
 
 Det innebär att alla värden för alla beställningar måste kontrolleras.
+
+3. En jätte-säkerhetslucka har introducerats. Precis som innan så finns alla parametrar som hidden-fält Client Side. I det här fallet är dock användarnamn/lösenord för paypal-kontot med bland paramterarna och visas i Plaintext.
+
+Detta innebär förmodligen att någon skulle kunna logga in på kontot och föra över alla pengarna på kontot till ett annat konto.
+
