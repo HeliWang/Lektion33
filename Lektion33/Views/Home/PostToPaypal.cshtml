@@ -1,0 +1,32 @@
+﻿@model Lektion33.Models.Paypal
+
+@{
+    ViewBag.Title = "PostToPaypal";
+}
+
+<h2>PostToPaypal</h2>
+<form id="frm" action="@Model.baseURL">
+    @Html.HiddenFor(m => m.USER)
+    @Html.HiddenFor(m => m.PWD)
+    @Html.HiddenFor(m => m.SIGNATURE)
+    @Html.HiddenFor(m => m.METHOD)
+    @Html.HiddenFor(m => m.VERSION)
+    @Html.HiddenFor(m => m.cancelURL)
+    @Html.HiddenFor(m => m.returnURL)
+    @Html.HiddenFor(m => m.PAYMENTREQUEST_0_CURRENCYCODE)
+    @Html.HiddenFor(m => m.PAYMENTREQUEST_0_PAYMENTACTION)
+    @Html.HiddenFor(m => m.PAYMENTREQUEST_0_AMT)
+    @Html.HiddenFor(m => m.PAYMENTREQUEST_0_ITEMAMT)
+    @Html.HiddenFor(m => m.L_PAYMENTREQUEST_0_ITEMCATEGORY0)
+    @Html.HiddenFor(m => m.L_PAYMENTREQUEST_0_NAME0)
+    @Html.HiddenFor(m => m.L_PAYMENTREQUEST_0_QTY0)
+    @Html.HiddenFor(m => m.L_PAYMENTREQUEST_0_AMT0)
+</form>
+<p>
+    Redirecting to Paypal
+</p>
+<script type="text/javascript">
+    $(function () {
+        $('#frm').submit();
+    });
+</script>

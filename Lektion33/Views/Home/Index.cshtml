@@ -1,0 +1,12 @@
+﻿@model Lektion33.Models.CheckoutModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm("PostToPaypal", "Home")) { 
+    <text>Product:</text> @Html.DisplayFor(m => m.item)
+    @Html.HiddenFor(m => m.item)
+    <p>Price: @Html.DisplayFor(m => m.amount)</p>
+    @Html.HiddenFor(m => m.amount)
+    <input type="submit" value="Pay With Paypal" />
+}
